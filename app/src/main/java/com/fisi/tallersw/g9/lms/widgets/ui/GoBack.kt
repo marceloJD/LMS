@@ -21,7 +21,6 @@ fun GoBack(navController: NavController, text: String = "Atrás") {
             Image(
                 painter = painterResource(id = R.drawable.back_arrow_black),
                 contentDescription = "back arrow",
-
                 )
             Text(text, modifier = Modifier.padding(start = 8.dp))
         }

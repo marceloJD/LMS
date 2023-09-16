@@ -10,7 +10,6 @@ import androidx.compose.ui.Modifier
 import com.fisi.tallersw.g9.lms.navigation.AppNavigation
 import com.fisi.tallersw.g9.lms.ui.theme.LMSTheme
 
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

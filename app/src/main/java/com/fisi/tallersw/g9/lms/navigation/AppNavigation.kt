@@ -8,10 +8,11 @@ import com.fisi.tallersw.g9.lms.screens.SplashScreen
 import com.fisi.tallersw.g9.lms.screens.auth.AuthLandingScreen
 import com.fisi.tallersw.g9.lms.screens.auth.AuthLoginScreen
 import com.fisi.tallersw.g9.lms.screens.auth.AuthSignInScreen
+import com.fisi.tallersw.g9.lms.screens.dashboard.DashboardScreen
 
 @Composable
 fun AppNavigation() {
-    val controller = rememberNavController();
+    val controller = rememberNavController()
 
     NavHost(
         navController = controller,
@@ -29,6 +30,9 @@ fun AppNavigation() {
         }
         composable(route = AppScreens.AuthSignInScreen.route) {
             AuthSignInScreen(controller)
+        }
+        composable(route = AppScreens.DashboardScreen.route) {
+            DashboardScreen(controller)
         }
 
 //        composable(route = AppScreens.HomeScreen.route + "/{courseId}",

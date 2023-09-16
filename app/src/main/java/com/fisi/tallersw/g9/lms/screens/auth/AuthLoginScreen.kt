@@ -89,7 +89,9 @@ fun AuthLogin(navController: NavController) {
                 )
             }
             Spacer(Modifier.height(20.dp))
-            CustomButton(label = "Ingresar")
+            CustomButton(label = "Ingresar", onClick = {
+                navController.navigate(AppScreens.DashboardScreen.route)
+            })
             Spacer(Modifier.height(20.dp))
             TextButton(onClick = {
                 navController.navigate(route = AppScreens.AuthSignInScreen.route)

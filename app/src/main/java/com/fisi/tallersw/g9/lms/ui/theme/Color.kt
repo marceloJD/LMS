@@ -20,3 +20,7 @@ val LMSBlack = Color(0xFF403F4C)
 val LMSBlack90 = Color(0xFF53525E)
 val LMSBlack20 = Color(0xFFD9D9DB)
 val LMSBlack15 = Color(0xFFE2E2E4)
+
+val LMSSecondaryLight = Color(0xFF63A1FF)
+val LMSGreenLight = Color(0xFFA3D860)
+val LMSPrimaryLight = Color(0xFFCBA3FF)
