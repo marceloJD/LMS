@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -29,6 +30,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.fisi.tallersw.g9.lms.R
+import com.fisi.tallersw.g9.lms.iabutton.Iabutton
 import com.fisi.tallersw.g9.lms.menuoptionrow.MenuOptionRow
 import com.fisi.tallersw.g9.lms.menuoptionrow.Type
 import com.fisi.tallersw.g9.lms.navigation.AppScreens
@@ -128,5 +130,8 @@ fun RelayComponentsPreview (){
                 optionTitle = "Preguntas frecuentes"
             )
         }
+        Spacer(modifier = Modifier.height(64.dp))
+        // TODO: Encontrar modo de aplicar gradiente (Relay no soporta)
+        Iabutton(modifier=Modifier.clip(shape = CircleShape))
     }
 }

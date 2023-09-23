@@ -1,0 +1,148 @@
+{
+  "name": "iabutton",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "VvXl7VUFLvfy7npKfkx3Y2",
+    "node": "157:1547",
+    "version": "4213863354",
+    "component-id": "04b0c592894401f44778f9ddd9118545130e8e34"
+  },
+  "default": "IAButton",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      }
+    ],
+    "modes": {
+      "IAButton": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": "18.28571319580078",
+            "border-radius": "54.85713195800781",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.14901960784313725",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "8.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onTap",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Vector"
+            ],
+            "item-spacing": "15.238092422485352",
+            "fills": [
+              {
+                "color": {},
+                "opacity": "1.0",
+                "fill-type": "lineargradient",
+                "blend-mode": "normal",
+                "color-stops": [
+                  {
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "216.25668449197863",
+                      "saturation": "0.7540322580645161",
+                      "value": "0.9725490196078431"
+                    },
+                    "color-stop-position": "0.0"
+                  },
+                  {
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "342.9508196721311",
+                      "saturation": "0.7290836653386453",
+                      "value": "0.984313725490196"
+                    },
+                    "color-stop-position": "1.0"
+                  }
+                ],
+                "gradient-handle-positions": [
+                  {
+                    "x": "0.0",
+                    "y": "-0.11"
+                  },
+                  {
+                    "x": "0.16",
+                    "y": "1.13"
+                  },
+                  {
+                    "x": "-0.62",
+                    "y": "-0.03"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "Vector",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-1.52392578125"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-1.52392578125"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "27.4287109375"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "27.44384765625"
+              }
+            },
+            "vector-content": "vector.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onTap": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "IAButton",
+      "size": {
+        "width": 64.0,
+        "height": 64.01513671875
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
