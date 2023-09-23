@@ -5,8 +5,10 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -16,13 +18,16 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.fisi.tallersw.g9.lms.R
 import com.fisi.tallersw.g9.lms.navigation.AppScreens
+import com.fisi.tallersw.g9.lms.profileheader.ProfileHeader
 import com.fisi.tallersw.g9.lms.ui.theme.LMSPrimary
 import com.fisi.tallersw.g9.lms.widgets.ui.CustomButton
 
@@ -79,5 +84,20 @@ fun AuthLanding(navController: NavController) {
                 }
             }
         }
+    }
+}
+
+
+@Composable
+@Preview
+fun RelayComponentsPreview (){
+    Column(modifier=Modifier.padding(32.dp)) {
+        ProfileHeader(
+            name = "Lorem Ipsum",
+            lastName = "Et Amet",
+            facultyName = "FISI",
+            schoolName = "Ing. Software",
+            profileImage = painterResource(id = R.drawable.lmsialogo)
+        )
     }
 }

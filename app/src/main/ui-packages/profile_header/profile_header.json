@@ -1,0 +1,269 @@
+{
+  "name": "profile_header",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "VvXl7VUFLvfy7npKfkx3Y2",
+    "node": "157:700",
+    "version": "4213725549",
+    "component-id": "98a1225f10437d063fc0a5bdede6d50bc0d0107f"
+  },
+  "default": "ProfileHeader",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "image"
+      },
+      {
+        "type": "group",
+        "id": "Frame 57"
+      },
+      {
+        "type": "group",
+        "id": "Frame 55"
+      },
+      {
+        "type": "group",
+        "id": "Frame 56"
+      },
+      {
+        "type": "text",
+        "id": "Ivan Carlo"
+      },
+      {
+        "type": "text",
+        "id": "Petrovik Azabache"
+      },
+      {
+        "type": "text",
+        "id": "Facultad de Ingeniería de Sistemas"
+      },
+      {
+        "type": "text",
+        "id": "E.P. de Ingeniería de Software"
+      }
+    ],
+    "modes": {
+      "ProfileHeader": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "image",
+              "Frame 57"
+            ],
+            "item-spacing": "48.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "image",
+            "border-radius": "100.0",
+            "tap-handler": "$onTapProfileImage",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              }
+            },
+            "stroke-width": "2.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "342.9508196721311",
+              "saturation": "0.7290836653386453",
+              "value": "0.984313725490196"
+            },
+            "image-content": "$profileImage",
+            "scale": "fill"
+          },
+          {
+            "id": "Frame 57",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Frame 55",
+              "Frame 56"
+            ],
+            "item-spacing": "16.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Frame 55",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Ivan Carlo",
+              "Petrovik Azabache"
+            ],
+            "item-spacing": "4.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Frame 56",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Facultad de Ingeniería de Sistemas",
+              "E.P. de Ingeniería de Software"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Ivan Carlo",
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "244.61538461538458",
+              "saturation": "0.17105263157894732",
+              "value": "0.2980392156862745"
+            },
+            "text-content": "$name",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "24.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          },
+          {
+            "id": "Petrovik Azabache",
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "244.61538461538458",
+              "saturation": "0.17105263157894732",
+              "value": "0.2980392156862745"
+            },
+            "text-content": "$lastName",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "24.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          },
+          {
+            "id": "Facultad de Ingeniería de Sistemas",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "342.9508196721311",
+              "saturation": "0.7290836653386453",
+              "value": "0.984313725490196"
+            },
+            "text-content": "$facultyName",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          },
+          {
+            "id": "E.P. de Ingeniería de Software",
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$schoolName",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "12.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "profileImage": {
+      "data-type": "image",
+      "required": false,
+      "description": ""
+    },
+    "onTapProfileImage": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "name": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "lastName": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "facultyName": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "schoolName": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "ProfileHeader",
+      "size": {
+        "width": 247.0,
+        "height": 263.0
+      },
+      "parameters": {
+        "profileImage": "image.jpeg",
+        "name": "Ivan Carlo",
+        "lastName": "Petrovik Azabache",
+        "facultyName": "Facultad de Ingeniería de Sistemas",
+        "schoolName": "E.P. de Ingeniería de Software"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
