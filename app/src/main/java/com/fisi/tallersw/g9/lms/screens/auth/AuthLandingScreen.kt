@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -18,6 +19,8 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -26,8 +29,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.fisi.tallersw.g9.lms.R
+import com.fisi.tallersw.g9.lms.menuoptionrow.MenuOptionRow
+import com.fisi.tallersw.g9.lms.menuoptionrow.Type
 import com.fisi.tallersw.g9.lms.navigation.AppScreens
 import com.fisi.tallersw.g9.lms.profileheader.ProfileHeader
+import com.fisi.tallersw.g9.lms.ui.theme.LMSBLack50
 import com.fisi.tallersw.g9.lms.ui.theme.LMSPrimary
 import com.fisi.tallersw.g9.lms.widgets.ui.CustomButton
 
@@ -91,7 +97,8 @@ fun AuthLanding(navController: NavController) {
 @Composable
 @Preview
 fun RelayComponentsPreview (){
-    Column(modifier=Modifier.padding(32.dp)) {
+    Column(modifier=Modifier.padding(32.dp),
+        horizontalAlignment = Alignment.CenterHorizontally) {
         ProfileHeader(
             name = "Lorem Ipsum",
             lastName = "Et Amet",
@@ -99,5 +106,27 @@ fun RelayComponentsPreview (){
             schoolName = "Ing. Software",
             profileImage = painterResource(id = R.drawable.lmsialogo)
         )
+        Spacer(modifier = Modifier.height(64.dp))
+        // TODO: Add separators (either inside Relaycomponent or using separator)
+        Column(modifier= Modifier
+            .clip(shape = RoundedCornerShape(12.dp))
+            .background(Color.White)) {
+            MenuOptionRow(
+                type = Type.MenuHeader,
+                optionHeader = "Perfil personal"
+            )
+            MenuOptionRow(
+                type = Type.Label,
+                optionTitle = "ID universitario"
+            )
+            MenuOptionRow(
+                type = Type.Label,
+                optionTitle = "Actualizar datos"
+            )
+            MenuOptionRow(
+                type = Type.Label,
+                optionTitle = "Preguntas frecuentes"
+            )
+        }
     }
 }

@@ -1,0 +1,445 @@
+{
+  "name": "menu_option_row",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "VvXl7VUFLvfy7npKfkx3Y2",
+    "node": "69:564",
+    "version": "4213800456",
+    "component-id": "d904826b1134e0b8c9a1231c2ba68c129075c3a1"
+  },
+  "default": "Type=Information",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Opción"
+      },
+      {
+        "type": "text",
+        "id": "Información"
+      },
+      {
+        "type": "group",
+        "id": "Frame 21"
+      },
+      {
+        "type": "group",
+        "id": "ep:arrow-right-bold"
+      },
+      {
+        "type": "text",
+        "id": "Descripción de texto exageradamente larga y que se truncará"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      },
+      {
+        "type": "text",
+        "id": "Cabecera"
+      }
+    ],
+    "modes": {
+      "Type=Information": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "20.0",
+              "top": "12.0",
+              "right": "20.0",
+              "bottom": "12.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "space-between",
+            "children": [
+              "Opción",
+              "Información"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Opción",
+            "color": {
+              "alpha": "1.0",
+              "hue": "244.61538461538458",
+              "saturation": "0.17105263157894732",
+              "value": "0.2980392156862745"
+            },
+            "text-content": "$optionTitle",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          },
+          {
+            "id": "Información",
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.0",
+              "saturation": "0.10666666666666666",
+              "value": "0.5882352941176471"
+            },
+            "text-content": "$information",
+            "overflow": "visible",
+            "text-align": "right",
+            "text-size": "12.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          }
+        ]
+      },
+      "Type=Description": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "20.0",
+              "top": "12.0",
+              "right": "20.0",
+              "bottom": "12.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Frame 21",
+              "ep:arrow-right-bold"
+            ],
+            "item-spacing": "111.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Frame 21",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "cross-axis-align": "start",
+            "children": [
+              "Opción",
+              "Descripción de texto exageradamente larga y que se truncará"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "ep:arrow-right-bold",
+            "tap-handler": "$onTap",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector"
+            ]
+          },
+          {
+            "id": "Opción",
+            "color": {
+              "alpha": "1.0",
+              "hue": "244.61538461538458",
+              "saturation": "0.17105263157894732",
+              "value": "0.2980392156862745"
+            },
+            "text-content": "$optionTitle",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          },
+          {
+            "id": "Descripción de texto exageradamente larga y que se truncará",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "200.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.0",
+              "saturation": "0.10666666666666666",
+              "value": "0.5882352941176471"
+            },
+            "text-content": "$optionDescription",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "12.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          },
+          {
+            "id": "Vector",
+            "margin": {
+              "left": "4.37518310546875",
+              "top": "1.175323486328125",
+              "right": "2.92529296875",
+              "bottom": "1.1858673095703125"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector.svg"
+          }
+        ]
+      },
+      "Type=Label": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "20.0",
+              "top": "12.0",
+              "right": "20.0",
+              "bottom": "12.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "space-between",
+            "children": [
+              "Opción",
+              "ep:arrow-right-bold"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Opción",
+            "color": {
+              "alpha": "1.0",
+              "hue": "244.61538461538458",
+              "saturation": "0.17105263157894732",
+              "value": "0.2980392156862745"
+            },
+            "text-content": "$optionTitle",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          },
+          {
+            "id": "ep:arrow-right-bold",
+            "tap-handler": "$onTap",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector"
+            ]
+          },
+          {
+            "id": "Vector",
+            "margin": {
+              "left": "4.37518310546875",
+              "top": "1.1753082275390625",
+              "right": "2.92529296875",
+              "bottom": "1.185882568359375"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector1.svg"
+          }
+        ]
+      },
+      "Type=MenuHeader": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "20.0",
+              "top": "12.0",
+              "right": "20.0",
+              "bottom": "12.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Cabecera"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Cabecera",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.0",
+              "saturation": "0.10666666666666666",
+              "value": "0.5882352941176471"
+            },
+            "text-content": "$optionHeader",
+            "overflow": "visible",
+            "text-align": "left",
+            "line-height": "1.2599999564034599",
+            "typeface": "Outfit"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "optionTitle": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "information": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "onTap": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "optionDescription": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "optionHeader": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Type=Information",
+      "size": {
+        "width": 365.0,
+        "height": 44.0
+      },
+      "parameters": {
+        "optionTitle": "Opción",
+        "information": "Información",
+        "optionDescription": "Descripción de texto exageradamente larga y que se truncará",
+        "optionHeader": "Cabecera"
+      }
+    },
+    {
+      "design": "Type=Description",
+      "size": {
+        "width": 365.0,
+        "height": 59.0
+      },
+      "parameters": {
+        "optionTitle": "Opción",
+        "information": "Información",
+        "optionDescription": "Descripción de texto exageradamente larga y que se truncará",
+        "optionHeader": "Cabecera"
+      }
+    },
+    {
+      "design": "Type=Label",
+      "size": {
+        "width": 365.0,
+        "height": 44.0
+      },
+      "parameters": {
+        "optionTitle": "Opción",
+        "information": "Información",
+        "optionDescription": "Descripción de texto exageradamente larga y que se truncará",
+        "optionHeader": "Cabecera"
+      }
+    },
+    {
+      "design": "Type=MenuHeader",
+      "size": {
+        "width": 365.0,
+        "height": 42.0
+      },
+      "parameters": {
+        "optionTitle": "Opción",
+        "information": "Información",
+        "optionDescription": "Descripción de texto exageradamente larga y que se truncará",
+        "optionHeader": "Cabecera"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
