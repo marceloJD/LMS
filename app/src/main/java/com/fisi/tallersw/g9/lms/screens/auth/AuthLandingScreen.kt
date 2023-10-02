@@ -34,6 +34,8 @@ import com.fisi.tallersw.g9.lms.iabutton.Iabutton
 import com.fisi.tallersw.g9.lms.menuoptionrow.MenuOptionRow
 import com.fisi.tallersw.g9.lms.menuoptionrow.Type
 import com.fisi.tallersw.g9.lms.navigation.AppScreens
+import com.fisi.tallersw.g9.lms.numberindicator.NumberIndicator
+import com.fisi.tallersw.g9.lms.numberindicator.Status
 import com.fisi.tallersw.g9.lms.profileheader.ProfileHeader
 import com.fisi.tallersw.g9.lms.ui.theme.LMSBLack50
 import com.fisi.tallersw.g9.lms.ui.theme.LMSPrimary
@@ -133,5 +135,8 @@ fun RelayComponentsPreview (){
         Spacer(modifier = Modifier.height(64.dp))
         // TODO: Encontrar modo de aplicar gradiente (Relay no soporta)
         Iabutton(modifier=Modifier.clip(shape = CircleShape))
+        Spacer(modifier = Modifier.height(64.dp))
+        NumberIndicator(status = Status.Fail, numberValue = "0", numberCap = "/20")
+        NumberIndicator(status = Status.Approved, numberValue = "20", numberCap = "/20")
     }
 }

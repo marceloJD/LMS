@@ -1,0 +1,328 @@
+{
+  "name": "number_indicator",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "VvXl7VUFLvfy7npKfkx3Y2",
+    "node": "179:588",
+    "version": "4260624328",
+    "component-id": "3f552f81528e1f6f4e94642d46a20409cdf7df09"
+  },
+  "default": "Status=Approved",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "10"
+      },
+      {
+        "type": "text",
+        "id": "/16"
+      },
+      {
+        "type": "text",
+        "id": "8"
+      },
+      {
+        "type": "text",
+        "id": "3"
+      },
+      {
+        "type": "text",
+        "id": "13"
+      },
+      {
+        "type": "text",
+        "id": "/20"
+      }
+    ],
+    "modes": {
+      "Status=Approved": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "10",
+              "/16"
+            ],
+            "item-spacing": "4.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "10",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "218.1818181818182",
+              "saturation": "0.7333333333333334",
+              "value": "1.0"
+            },
+            "text-content": "$numberValue",
+            "overflow": "visible",
+            "text-align": "right",
+            "text-size": "20.0",
+            "line-height": "1.2600000381469727",
+            "typeface": "Outfit"
+          },
+          {
+            "id": "/16",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$numberCap",
+            "overflow": "visible",
+            "text-align": "right",
+            "text-size": "12.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          }
+        ]
+      },
+      "Status=Warning": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "8",
+              "/16"
+            ],
+            "item-spacing": "4.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "8",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "45.18072289156627",
+              "saturation": "0.6859504132231404",
+              "value": "0.9490196078431372"
+            },
+            "text-content": "8",
+            "overflow": "visible",
+            "text-align": "right",
+            "text-size": "20.0",
+            "line-height": "1.2600000381469727",
+            "typeface": "Outfit"
+          },
+          {
+            "id": "/16",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$numberCap",
+            "overflow": "visible",
+            "text-align": "right",
+            "text-size": "12.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          }
+        ]
+      },
+      "Status=Fail": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "3",
+              "/16"
+            ],
+            "item-spacing": "4.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "3",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.5702127659574467",
+              "value": "0.9215686274509803"
+            },
+            "text-content": "3",
+            "overflow": "visible",
+            "text-align": "right",
+            "text-size": "20.0",
+            "line-height": "1.2600000381469727",
+            "typeface": "Outfit"
+          },
+          {
+            "id": "/16",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$numberCap",
+            "overflow": "visible",
+            "text-align": "right",
+            "text-size": "12.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          }
+        ]
+      },
+      "Status=None": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "13",
+              "/20"
+            ],
+            "item-spacing": "4.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "13",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "244.61538461538458",
+              "saturation": "0.17105263157894732",
+              "value": "0.2980392156862745"
+            },
+            "text-content": "13",
+            "overflow": "visible",
+            "text-align": "right",
+            "text-size": "20.0",
+            "line-height": "1.2600000381469727",
+            "typeface": "Outfit"
+          },
+          {
+            "id": "/20",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "/20",
+            "overflow": "visible",
+            "text-align": "right",
+            "text-size": "12.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "Outfit"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "numberValue": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "numberCap": {
+      "data-type": "text",
+      "required": false,
+      "description": "Maximum value to show"
+    }
+  },
+  "previews": [
+    {
+      "design": "Status=Approved",
+      "size": {
+        "width": 41.0,
+        "height": 25.0
+      },
+      "parameters": {
+        "numberValue": "10",
+        "numberCap": "/16"
+      }
+    },
+    {
+      "design": "Status=Warning",
+      "size": {
+        "width": 31.0,
+        "height": 25.0
+      },
+      "parameters": {
+        "numberValue": "10",
+        "numberCap": "/16"
+      }
+    },
+    {
+      "design": "Status=Fail",
+      "size": {
+        "width": 31.0,
+        "height": 25.0
+      },
+      "parameters": {
+        "numberValue": "10",
+        "numberCap": "/16"
+      }
+    },
+    {
+      "design": "Status=None",
+      "size": {
+        "width": 42.0,
+        "height": 25.0
+      },
+      "parameters": {
+        "numberValue": "10",
+        "numberCap": "/16"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
