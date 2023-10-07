@@ -1,0 +1,187 @@
+{
+  "name": "course_title",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "VvXl7VUFLvfy7npKfkx3Y2",
+    "node": "215:712",
+    "version": "4293613673",
+    "component-id": "af0b70f5b1e325cea4635970b32fea2ec3153c75"
+  },
+  "default": "CourseTitle",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "CourseIcon",
+        "key": "course_icon"
+      },
+      {
+        "type": "group",
+        "id": "Frame 75"
+      },
+      {
+        "type": "text",
+        "id": "Analítica de Datos"
+      },
+      {
+        "type": "group",
+        "id": "info-circle"
+      },
+      {
+        "type": "vector",
+        "id": "Icon"
+      }
+    ],
+    "modes": {
+      "CourseTitle": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "CourseIcon",
+              "Frame 75"
+            ],
+            "item-spacing": "20.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "CourseIcon",
+            "design": "$courseIcon",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "64.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "64.0"
+              }
+            }
+          },
+          {
+            "id": "Frame 75",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "310.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "space-between",
+            "children": [
+              "Analítica de Datos",
+              "info-circle"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Analítica de Datos",
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$courseName",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "48.0",
+            "letter-spacing": "-2.4000000000000004",
+            "line-height": "0.91",
+            "typeface": "Outfit"
+          },
+          {
+            "id": "info-circle",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon"
+            ]
+          },
+          {
+            "id": "Icon",
+            "margin": "2.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-1.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-1.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "icon.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "courseIcon": {
+      "data-type": "design-course_icon",
+      "required": false,
+      "description": ""
+    },
+    "courseName": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "CourseTitle",
+      "size": {
+        "width": 310.0,
+        "height": 172.0
+      },
+      "parameters": {
+        "courseIcon": "iconName=usb",
+        "courseName": "Analítica de Datos"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
