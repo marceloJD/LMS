@@ -1,0 +1,6 @@
+{
+    "target": "NavBar",
+    "package": "com.fisi.tallersw.g9.lms.navbar",
+    "generateImplementation": true,
+    "generatePreviews": true
+}

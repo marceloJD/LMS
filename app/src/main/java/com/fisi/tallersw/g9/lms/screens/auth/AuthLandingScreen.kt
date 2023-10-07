@@ -138,5 +138,6 @@ fun RelayComponentsPreview (){
         Spacer(modifier = Modifier.height(64.dp))
         NumberIndicator(status = Status.Fail, numberValue = "0", numberCap = "/20")
         NumberIndicator(status = Status.Approved, numberValue = "20", numberCap = "/20")
+        Spacer(modifier = Modifier.height(64.dp))
     }
 }
