@@ -1,5 +1,6 @@
 package com.fisi.tallersw.g9.lms.screens.auth
 
+import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -12,6 +13,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -33,6 +35,7 @@ import com.fisi.tallersw.g9.lms.navigation.AppScreens
 import com.fisi.tallersw.g9.lms.ui.theme.LMSBlack20
 import com.fisi.tallersw.g9.lms.ui.theme.LMSPrimary
 import com.fisi.tallersw.g9.lms.ui.theme.LMSSurface
+import com.fisi.tallersw.g9.lms.utils.Globales
 import com.fisi.tallersw.g9.lms.widgets.ui.CustomButton
 import com.fisi.tallersw.g9.lms.widgets.ui.GoBack
 
@@ -45,12 +48,36 @@ fun AuthLoginScreen(navController: NavController) {
 fun AuthLogin(navController: NavController) {
     var emailField by remember { mutableStateOf("") }
     var passwordField by remember { mutableStateOf("") }
+    var mostrarDialogo by remember {
+        mutableStateOf(false)
+    }
+    var mensajeDialogo = ""
 
     Column(
         modifier = Modifier
             .fillMaxHeight()
             .padding(20.dp)
     ) {
+        if (mostrarDialogo) {
+            AlertDialog(
+                onDismissRequest = { mostrarDialogo=false },
+                title = {
+                    Text(text = "Mensaje")
+                },
+                text = {
+                    Text(text = "DIALOGO")
+                },
+                confirmButton = {
+                    TextButton(
+                        onClick = {
+                            mostrarDialogo=false
+                        }
+                    ) {
+                        Text("Aceptar")
+                    }
+                }
+            )
+        }
         Column(
             modifier = Modifier
                 .fillMaxWidth()
@@ -90,7 +117,8 @@ fun AuthLogin(navController: NavController) {
             }
             Spacer(Modifier.height(20.dp))
             CustomButton(label = "Ingresar", onClick = {
-                navController.navigate(AppScreens.DashboardScreen.route)
+                    navController.navigate(AppScreens.DashboardScreen.route)
+
             })
             Spacer(Modifier.height(20.dp))
             TextButton(onClick = {

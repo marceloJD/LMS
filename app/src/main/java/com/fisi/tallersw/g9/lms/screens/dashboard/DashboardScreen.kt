@@ -1,5 +1,6 @@
 package com.fisi.tallersw.g9.lms.screens.dashboard
 
+import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -20,16 +21,20 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.fisi.tallersw.g9.lms.navigation.AppScreens
 import com.fisi.tallersw.g9.lms.ui.theme.LMSGreenLight
 import com.fisi.tallersw.g9.lms.ui.theme.LMSPrimary
 import com.fisi.tallersw.g9.lms.ui.theme.LMSPrimaryLight
 import com.fisi.tallersw.g9.lms.ui.theme.LMSSecondary
 import com.fisi.tallersw.g9.lms.ui.theme.LMSSecondaryLight
+import com.fisi.tallersw.g9.lms.ui.theme.LMSSurface
+import com.fisi.tallersw.g9.lms.utils.Globales
 import com.fisi.tallersw.g9.lms.widgets.UserBadge
 import com.fisi.tallersw.g9.lms.widgets.ui.IconCard
 
 @Composable
 fun DashboardScreen(navController: NavController) {
+    //Log.i("Marcelo",Globales.getInstance().clave)
     Dashboard(navController)
 }
 
@@ -65,15 +70,16 @@ fun Dashboard(navController: NavController) {
                 IconCard(
                     label = "Mis cursos",
                     backgroundColor = LMSPrimaryLight,
-                    icon = {},
+
                     onClick = {
+                        navController.navigate(AppScreens.Mis_Cursos.route)
                     }
                 )
                 Spacer(Modifier.width(24.dp))
                 IconCard(
                     label = "Mi horario",
                     backgroundColor = LMSSecondaryLight,
-                    icon = {}
+
                 )
             }
             Spacer(Modifier.height(24.dp))
@@ -81,12 +87,22 @@ fun Dashboard(navController: NavController) {
                 IconCard(
                     label = "Mis tareas",
                     backgroundColor = LMSGreenLight,
-                    icon = {}
+
+
                 )
             }
             Spacer(Modifier.height(24.dp))
             IconCard(label = "Mis preguntas",
-                backgroundColor = LMSPrimary, icon = {})
+                backgroundColor = LMSPrimary, icon = {},
+                modifier = Modifier.fillMaxWidth(),
+                labelColor = LMSSurface,
+                onClick = {
+                    Log.i("MENSAJE","Mis preguntas")
+                    navController.navigate(AppScreens.ChatScreen.route)
+
+                }
+
+            )
         }
     }
 }

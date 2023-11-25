@@ -27,12 +27,18 @@ import com.fisi.tallersw.g9.lms.ui.theme.LMSSurface
 fun IconCard(
     backgroundColor: Color = LMSSurface,
     label: String,
-    labelColor: Color = LMSBlack,
-    icon: @Composable() () -> Unit,
+    labelColor: Color = LMSSurface,
+    icon: @Composable() () -> Unit={
+        Image(
+            painter = painterResource(id = R.drawable.back_arrow_black),
+            contentDescription = "iconCardName",
+        )
+    },
     onClick: () -> Unit = {},
+    modifier:Modifier=Modifier
 ) {
     Column(
-        modifier = Modifier
+        modifier = modifier
             .shadow(
                 elevation = 8.dp,
                 spotColor = Color(0x26000000),

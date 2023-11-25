@@ -8,7 +8,9 @@ import com.fisi.tallersw.g9.lms.screens.SplashScreen
 import com.fisi.tallersw.g9.lms.screens.auth.AuthLandingScreen
 import com.fisi.tallersw.g9.lms.screens.auth.AuthLoginScreen
 import com.fisi.tallersw.g9.lms.screens.auth.AuthSignInScreen
+import com.fisi.tallersw.g9.lms.screens.chat.ChatScreen
 import com.fisi.tallersw.g9.lms.screens.dashboard.DashboardScreen
+import com.fisi.tallersw.g9.lms.screens.mis_cursos.Mis_Cursos
 
 @Composable
 fun AppNavigation() {
@@ -19,6 +21,15 @@ fun AppNavigation() {
         // ! Splash debe iniciar aquí
         startDestination = AppScreens.SplashScreen.route
     ) {
+
+
+        composable(route = AppScreens.Mis_Cursos.route) {
+            Mis_Cursos(controller )
+        }
+
+        composable(route = AppScreens.ChatScreen.route) {
+            ChatScreen(controller )
+        }
         composable(route = AppScreens.SplashScreen.route) {
             SplashScreen(controller)
         }
